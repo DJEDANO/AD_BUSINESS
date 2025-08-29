@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad_Business - Vente de Produits Électroniques</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header avec navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h2><span class="blue-text">Ad</span><span class="green-text">_Business</span></h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#accueil" class="nav-link">Accueil</a></li>
+                    <li class="nav-item"><a href="#catalogue" class="nav-link">Catalogue</a></li>
+                    <li class="nav-item"><a href="#galerie" class="nav-link">Galerie</a></li>
+                    <li class="nav-item"><a href="#apropos" class="nav-link">À Propos</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="#panier" class="nav-link cart-link"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                   <span class="bar"></span>
+                    
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section avec Slider -->
+    <section id="accueil" class="hero">
+        <div class="slider-container">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h1>Technologie de <span class="green-text">Pointe</span> à Portée de Main</h1>
+                    <p>Découvrez notre sélection d'ordinateurs, téléphones et accessoires électroniques de qualité</p>
+                    <a href="#catalogue" class="btn primary-btn">Voir le catalogue</a>
+                </div>
+                <div class="slide-image">
+                    <img src="./Assets/slide1.png" alt="Technologie de pointe">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h1>Powerbanks & <span class="blue-text">Accessoires</span></h1>
+                    <p>Restez connecté où que vous soyez avec nos powerbanks haute capacité et accessoires</p>
+                    <a href="#catalogue" class="btn primary-btn">Découvrir</a>
+                </div>
+                <div class="slide-image">
+                    <img src="./Assets/slide2.png" alt="Powerbanks et accessoires">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h1>Solutions de Stockage <span class="green-text">Performantes</span></h1>
+                    <p>Disques durs et clés USB pour toutes vos besoins de stockage de données</p>
+                    <a href="#catalogue" class="btn primary-btn">Explorer</a>
+                </div>
+                <div class="slide-image">
+                    <img src="./Assets/slide3.png" alt="Solutions de stockage">
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="control-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="control-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="slider-dots"></div>
+        </div>
+    </section>
+
+    <!-- Catalogue Section -->
+    <section id="catalogue" class="catalogue">
+        <div class="container">
+            <h2 class="section-title">Notre <span class="blue-text">Catalogue</span></h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="ordinateurs">Ordinateurs</button>
+                <button class="filter-btn" data-filter="telephones">Téléphones</button>
+                <button class="filter-btn" data-filter="powerbanks">Powerbanks</button>
+                <button class="filter-btn" data-filter="stockage">Stockage</button>
+                <button class="filter-btn" data-filter="accessoires">Accessoires</button>
+            </div>
+            <div class="products-grid">
+                <!-- Les produits seront générés dynamiquement par JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Galerie Section -->
+    <section id="galerie" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Notre <span class="green-text">Galerie</span></h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="./Assets/galery1.jpeg" alt="Espace de vente">
+                    <div class="gallery-overlay">
+                        <h3>Espace de Vente</h3>
+                        <p>Notre magasin à Dombaou/Moundou</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./Assets/galery2.jpeg" alt="Produits en exposition">
+                    <div class="gallery-overlay">
+                        <h3>Produits en Exposition</h3>
+                        <p>Découvrez nos derniers arrivages</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./Assets/galery3.jpeg" alt="Équipe technique">
+                    <div class="gallery-overlay">
+                        <h3>Équipe Technique</h3>
+                        <p>Nos experts à votre service</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./Assets/galery4.jpeg" alt="Support client">
+                    <div class="gallery-overlay">
+                        <h3>Support Client</h3>
+                        <p>Conseils et assistance personnalisée</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./Assets/galery5.jpeg" alt="Atelier de réparation">
+                    <div class="gallery-overlay">
+                        <h3>Atelier de Réparation</h3>
+                        <p>Service après-vente qualifié</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./Assets/galery6.jpg" alt="Événements">
+                    <div class="gallery-overlay">
+                        <h3>Événements</h3>
+                        <p>Participation aux salons technologiques</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- À Propos Section -->
+    <section id="apropos" class="about">
+        <div class="container">
+            <h2 class="section-title">À <span class="blue-text">Propos</span> de Nous</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Votre Partenaire Technologique à Dombaou/Moundou</h3>
+                    <p>Ad_Business est votre destination de confiance pour tous vos besoins en produits électroniques. Fondée en 2015, notre entreprise s'est engagée à fournir des produits de qualité à des prix abordables pour la communauté de Dombaou et ses environs.</p>
+                    <p>Nous proposons une large gamme de produits allant des ordinateurs et téléphones aux accessoires électroniques comme les powerbanks, clés USB et disques durs externes. Notre équipe de techniciens qualifiés assure un service après-vente de qualité et des conseils personnalisés.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h4>500+</h4>
+                            <p>Clients satisfaits</p>
+                        </div>
+                        <div class="stat">
+                            <h4>8+</h4>
+                            <p>Années d'expérience</p>
+                        </div>
+                        <div class="stat">
+                            <h4>1000+</h4>
+                            <p>Produits vendus</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="./Assets/apropo.jpeg" alt="À propos de Ad_Business">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Nous <span class="green-text">Contacter</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Venez nous rendre visite</h3>
+                    <p>Notre équipe est à votre disposition pour répondre à toutes vos questions et vous conseiller sur les meilleurs produits adaptés à vos besoins.</p>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Dombaou/Moundou, Tchad</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+235 60 35 76 94</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>contact@adbusiness.td</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Lun - Sam: 8h - 18h</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Votre nom complet" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Votre adresse email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Votre numéro de téléphone">
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" required>
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="question">Question sur un produit</option>
+                                <option value="support">Support technique</option>
+                                <option value="partnership">Partenariat</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Votre message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Panier Modal -->
+    <div id="panier-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Votre Panier</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="cart-items">
+                    <!-- Les articles du panier seront générés ici -->
+                </div>
+                <div class="cart-total">
+                    <h3>Total: <span id="cart-total-price">0</span> FCFA</h3>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn secondary-btn" id="close-cart">Continuer mes achats</button>
+                <button class="btn primary-btn" id="checkout">Commander</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><span class="blue-text">Ad</span><span class="green-text">_Business</span></h3>
+                    <p>Votre destination pour tous les produits électroniques à Dombaou/Moundou. Qualité, prix abordables et service personnalisé.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Catégories</h4>
+                    <ul>
+                        <li><a href="#catalogue" data-filter="ordinateurs">Ordinateurs</a></li>
+                        <li><a href="#catalogue" data-filter="telephones">Téléphones</a></li>
+                        <li><a href="#catalogue" data-filter="powerbanks">Powerbanks</a></li>
+                        <li><a href="#catalogue" data-filter="stockage">Stockage</a></li>
+                        <li><a href="#catalogue" data-filter="accessoires">Accessoires</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#catalogue">Catalogue</a></li>
+                        <li><a href="#galerie">Galerie</a></li>
+                        <li><a href="#apropos">À Propos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Abonnez-vous pour recevoir nos offres spéciales et nouveautés.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Votre email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Ad_Business. Tous droits réservés. | Dombaou/Moundou, Tchad</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
